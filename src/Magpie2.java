@@ -31,21 +31,21 @@ public class Magpie2
 	public String getResponse(String statement)
 	{
 		String response = "";
-		if (statement.indexOf("no") >= 0)
+		if (statement.indexOf("") >= 0)
 		{
-			response = "Why so negative?";
+			response = "say something, please";
 		}
 		else if (statement.indexOf("cat") >= 0
 				|| statement.indexOf("dog") >= 0
-				|| statement.indexOf("pet") >= 0
-				|| statement.indexOf("Mr.Pennebacker") >= 0)
-		{
-			response = "Tell me more about your pets.";
+				|| statement.indexOf("") >= 0
+				|| statement.indexOf("Mr.Pennebacker") >= 0) {
+			response = "Tell me more about your pets";
 		}
 		else
 		{
-			response = getRandomResponse();
+			response = "He sounds like a good teacher";
 		}
+
 		return response;
 	}
 
@@ -76,6 +76,8 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
+
+
 
 		return response;
 	}
