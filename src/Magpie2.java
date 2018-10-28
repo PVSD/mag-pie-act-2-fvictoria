@@ -52,8 +52,29 @@ public class Magpie2
 	}
 	else if (statement.indexOf("mr.p") >= 0
 			|| statement.indexOf("mr.pennebacker") >= 0)
+
 		{
 			response = "He sounds like a great teacher";
+		}
+		else if (statement.indexOf("hi") >= 0
+				|| statement.indexOf("good day") >= 0)
+		{
+			response = "hello";
+		}
+		else if (statement.indexOf("you") >= 0
+			||(statement.indexOf("how are you?") >=0))
+
+		{
+			response = "I'm well";
+		}
+
+		else if(response.trim()=="")
+		{
+			response = "Say something please!";
+		}
+		else
+		{
+			response = getRandomResponse();
 		}
 
 
